@@ -1,6 +1,22 @@
-# You're not done yet - Mobile
+# You're Not Done Yet - Mobile
 
-## Intro
+## Table of Contents
+
+//This is more of a TODO list more than anything right now
+1. Intro
+2. Text Inputs
+3. Other Inputs (checkbox, switches, mutually exclusive controls)
+3. Error Management
+4. Navigation (push, pop, tabs, modal)
+8. Background (saved state, springboard card)
+5. Connectivity
+6. Localization (of text & images)
+7. Interruptions (calls)
+9. Storage
+10. Security
+11. Accessibility (software buttons, zooming, font sizes, text to speech, ...)
+
+## I : Intro
 
 What is this about ? This is about testing your app thoroughly and completely. This list will include as many elements as possible that you should test. Many of which you probably have already tested, some that you might have not thought about. This is about checking all the boxes and either validate the fact that you did indeed test X & Y, but that you also decided to ignore Z. Many of the elements of the checklist might not apply to you, because your app does not have that specific feature or does not use a specific technology. You might also simply want to skip some of testing for whatever reason, and that is fine. That's up to you to find out and decide ; as long as you've made a decision, it means that you've read the list, accepted the price & consequences of (not) testing and are good to go !
 
@@ -14,7 +30,7 @@ It's funny (or at least I like to think it is) and it's true. This simple exampl
 - Input validation :
   - Do you accept alphanumeric characters only ?
   - Do you accept symbols / non alphanumeric characters ?
-  - Do you deal with Chinese / Arabic / Cyrillic alphabets ?
+  - Do you deal with Chinese / Arabic / Cyrillic AND Turkish alphabets ?
   - How many characters do you accept ?
   - Do you accept only letters ?
     - Did you define what a valid input is ?
@@ -36,6 +52,5 @@ It can look quite overwhelming and that is normal. I want this list to be as com
 You can use this list however you like, because as long as you use it you'll improve the quality of the software you're shipping. The fact that you use that list is far more important than how you use that list. It could be a thorough and regular walkthrough, a pre-release last minute checklist, or even as simple as a quick read before going to bed. As long as you read it and know it's there, it'll be useful somehow.
 
 And finally, I would like to thank Michael Hunter for [his amazing checklist](http://www.thebraidytester.com/downloads/YouAreNotDoneYet.pdf "Title"), which inspired me to start my own checklist specifically around mobile development (iOS, Android, Windows Phone). It does look like a lot of time and effort was put into that version of the list, which I know is not even the first version. That is great work and if you're outside of mobile, I **strongly** suggest you go check it out. My only hope is to, someday, achieve a checklist of a similar quality.
-
 
 
