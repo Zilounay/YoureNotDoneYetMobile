@@ -26,8 +26,22 @@ Here's a rather famous tweet that illustrates what I mean.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="nl" dir="ltr">QA Engineer walks into a bar. Orders a beer. Orders 0 beers. Orders 999999999 beers. Orders a lizard. Orders -1 beers. Orders a sfdeljknesv.</p>&mdash; Bill Sempf (@sempf) <a href="https://twitter.com/sempf/status/514473420277694465?ref_src=twsrc%5Etfw">September 23, 2014</a></blockquote>
 
-It's funny (or at least I like to think it is) and it's true. This simple example illustrates many things to check in your app :
-- Input validation :
+It's funny (or at least I like to think it is) and it's true. This simple example illustrates many things to check in your app.
+
+The whole list looks quite overwhelming and that is normal. I want it to be as complete as possible. Like I said earlier, the point is to inform you of the many possibilities. It is up to you to decide if an element is worth testing for your specific case. Wether it is or isn't is your decision, as long as you've made the decision and are aware of it. That is the point of this list. 
+
+You can use this list however you like, because as long as you use it you'll improve the quality of the software you're shipping. The fact that you use that list is far more important than how you use that list. It could be a thorough and regular walkthrough, a pre-release last minute checklist, or even as simple as a quick read before going to bed. As long as you read it and know it's there, it'll be useful somehow.
+
+As a quick but very important note, remember that a lot of this testing can be done using classic unit tests, and UI tests. That should already cover the vast majority of the important elements to test. The rest can be tested manually if necessary. That means that you can write test suites and use it in various places in your app to ensure long term stability. **Testing all this manually would be a nightmare** ; if you don't know how to write unit tests or UI tests, look it up. There is a lot to learn there that will save you a tremendous amount of time, and avoid the headache that manual testing is.
+
+And finally, I would like to thank Michael Hunter for [his amazing checklist](http://www.thebraidytester.com/downloads/YouAreNotDoneYet.pdf "Title"), which inspired me to start my own checklist specifically around mobile development (iOS, Android, Windows Phone). It does look like a lot of time and effort was put into that version of the list, which I know is not even the first version. That is great work and if you're outside of mobile, I **strongly** suggest you go check it out. My only hope is to, someday, achieve a checklist of a similar quality.
+
+## II : Text Inputs
+
+Text inputs come in many flavors, size and use cases. Obviously you don't treat <code>password</code> fields the same way you treat a <code>quantity</code> field, and the list should cover it all.
+
+### a : Text Validation :
+When validating data, 
   - Do you accept alphanumeric characters only ?
   - Do you accept symbols / non alphanumeric characters ?
   - Do you deal with Chinese / Arabic / Cyrillic AND Turkish alphabets ?
@@ -46,11 +60,3 @@ It's funny (or at least I like to think it is) and it's true. This simple exampl
  - Many more...
 
 And if you've dealt with all that, you still have to think about error management, probably some input formatting (like adding a comma if you're okay with decimals), and then you'd still have some work to do. And that's only for one text input in one screen of your app. There is a lot more.
-
-It can look quite overwhelming and that is normal. I want this list to be as complete as possible. Like I said earlier, the point of this list is to inform you of the many possibilities. It is up to you to decide if an element is worth testing for your specific case. Wether it is or isn't is your decision, as long as you've made the decision and are aware of it. That is the point of this list. 
-
-You can use this list however you like, because as long as you use it you'll improve the quality of the software you're shipping. The fact that you use that list is far more important than how you use that list. It could be a thorough and regular walkthrough, a pre-release last minute checklist, or even as simple as a quick read before going to bed. As long as you read it and know it's there, it'll be useful somehow.
-
-And finally, I would like to thank Michael Hunter for [his amazing checklist](http://www.thebraidytester.com/downloads/YouAreNotDoneYet.pdf "Title"), which inspired me to start my own checklist specifically around mobile development (iOS, Android, Windows Phone). It does look like a lot of time and effort was put into that version of the list, which I know is not even the first version. That is great work and if you're outside of mobile, I **strongly** suggest you go check it out. My only hope is to, someday, achieve a checklist of a similar quality.
-
-
