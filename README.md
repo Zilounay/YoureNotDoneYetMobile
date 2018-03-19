@@ -41,44 +41,39 @@
 
 
 ## I : Intro
+### a : What is this list
+  What is this about ? This is about testing your app thoroughly and completely. This list will include as many elements as possible that you should test. Many of which you probably have already tested, some that you might have not thought about. This is about checking all the boxes and either validate the fact that you did indeed test X & Y, but that you also decided to ignore Z. Many of the elements of the checklist might not apply to you, because your app does not have that specific feature or does not use a specific technology. You might also simply want to skip some of testing for whatever reason, and that is fine. That's up to you to find out and decide ; as long as you've made a decision, it means that you've read the list, accepted the price & consequences of (not) testing and are good to go !
 
-### I.a What is this list
+  If you think about your project, you probably have blinders on. Programmer's or owner's blinders are the worst, because you know what the app is supposed to do and, inevitably, you will test inside those bounds. Users might use your app, not in the way you thought they would, and this would be a UX problem. We're here only about testing, making sure that your app works offline, or on low battery, or when denied access rights that you actually need. Some stuff users might do that you took for granted during all these weeks of testing. This is mostly about "thinking outside the box" or, what I like to call it : doing the best job possible as a tester.
 
-      What is this about ? This is about testing your app thoroughly and completely. This list will include as many elements as possible that you should test. Many of which you probably have already tested, some that you might have not thought about. This is about checking all the boxes and either validate the fact that you did indeed test X & Y, but that you also decided to ignore Z. Many of the elements of the checklist might not apply to you, because your app does not have that specific feature or does not use a specific technology. You might also simply want to skip some of testing for whatever reason, and that is fine. That's up to you to find out and decide ; as long as you've made a decision, it means that you've read the list, accepted the price & consequences of (not) testing and are good to go !
-
-      If you think about your project, you probably have blinders on. Programmer's or owner's blinders are the worst, because you know what the app is supposed to do and, inevitably, you will test inside those bounds. Users might use your app, not in the way you thought they would, and this would be a UX problem. We're here only about testing, making sure that your app works offline, or on low battery, or when denied access rights that you actually need. Some stuff users might do that you took for granted during all these weeks of testing. This is mostly about "thinking outside the box" or, what I like to call it : doing the best job possible as a tester.
-
-      Here's a rather famous tweet that illustrates what I mean.
+  Here's a rather famous tweet that illustrates what I mean.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="nl" dir="ltr">QA Engineer walks into a bar. Orders a beer. Orders 0 beers. Orders 999999999 beers. Orders a lizard. Orders -1 beers. Orders a sfdeljknesv.</p>&mdash; Bill Sempf (@sempf) <a href="https://twitter.com/sempf/status/514473420277694465?ref_src=twsrc%5Etfw">September 23, 2014</a></blockquote>
 
-      It's funny (or at least I like to think it is) and it's true. This simple example illustrates many things to check in your app.
+  It's funny (or at least I like to think it is) and it's true. This simple example illustrates many things to check in your app.
 
-      The whole list looks quite overwhelming and that is normal. I want it to be as complete as possible. Like I said earlier, the point is to inform you of the many possibilities. It is up to you to decide if an element is worth testing for your specific case. Wether it is or isn't is your decision, as long as you've made the decision and are aware of it. That is the point of this list. 
+  The whole list looks quite overwhelming and that is normal. I want it to be as complete as possible. Like I said earlier, the point is to inform you of the many possibilities. It is up to you to decide if an element is worth testing for your specific case. Wether it is or isn't is your decision, as long as you've made the decision and are aware of it. That is the point of this list. 
 
-### I.b : How to use that list
+### b : How to use that list
+  You can use this list however you like, because as long as you use it you'll improve the quality of the software you're shipping. The fact that you use that list is far more important than how you use that list. It could be a thorough and regular walkthrough, a pre-release last minute checklist, or even as simple as a quick read before going to bed. As long as you read it and know it's there, it'll be useful somehow.
 
-      You can use this list however you like, because as long as you use it you'll improve the quality of the software you're shipping. The fact that you use that list is far more important than how you use that list. It could be a thorough and regular walkthrough, a pre-release last minute checklist, or even as simple as a quick read before going to bed. As long as you read it and know it's there, it'll be useful somehow.
+  As a quick but very important note, remember that a lot of this testing can be done using classic unit tests, and UI tests. That should already cover the vast majority of the important elements to test. The rest can be tested manually if necessary. That means that you can write test suites and use it in various places in your app to ensure long term stability. **Testing all this manually would be a nightmare** ; if you don't know how to write unit tests or UI tests, look it up. There is a lot to learn there that will save you a tremendous amount of time, and avoid the headache that manual testing is.
 
-      As a quick but very important note, remember that a lot of this testing can be done using classic unit tests, and UI tests. That should already cover the vast majority of the important elements to test. The rest can be tested manually if necessary. That means that you can write test suites and use it in various places in your app to ensure long term stability. **Testing all this manually would be a nightmare** ; if you don't know how to write unit tests or UI tests, look it up. There is a lot to learn there that will save you a tremendous amount of time, and avoid the headache that manual testing is.
+## c : Contribute
+  I'm mostly writing this alone, the only help/inspiration I got was from browsing the internet (see next chapter, I.d) on various subjects. Sadly, I am limited by my own knowledge and experience, which means there is certainly a lot of content missing in areas that you, dear reader, have a lot of experience in. That's where github comes in place ; you can freely ask for a pull request, modifying my content or adding your own. I will review it and validate it to the best of my knowledge, probably with the help of the community. Stuff like security, encryption, networking, those are areas where I lack the most. Considering I'm an average Joe, that's probably where most people lack skill, and where your app will be most vulnerable/lacking aswell. This means those are areas (the ones you're weak in) must be triple checked and you should definitely spend extra attention on it !
 
-## I.c : Contribute
-
-      I'm mostly writing this alone, the only help/inspiration I got was from browsing the internet (see next chapter, I.d) on various subjects. Sadly, I am limited by my own knowledge and experience, which means there is certainly a lot of content missing in areas that you, dear reader, have a lot of experience in. That's where github comes in place ; you can freely ask for a pull request, modifying my content or adding your own. I will review it and validate it to the best of my knowledge, probably with the help of the community. Stuff like security, encryption, networking, those are areas where I lack the most. Considering I'm an average Joe, that's probably where most people lack skill, and where your app will be most vulnerable/lacking aswell. This means those are areas (the ones you're weak in) must be triple checked and you should definitely spend extra attention on it !
-
-      Other ways of contributing / saying thank you would be the following :
+  Other ways of contributing / saying thank you would be the following :
 - Add a nice comment
 - Like/Star the page
 - Share the content using the repo link (please do not copy paste or rehost yourself, link directly)
 - If you really want to reward me in some special way, donations are always appreciated (and never mandatory)
 
-## I.d : How it all started
-
-      And finally, I would like to thank Michael Hunter for [his amazing checklist](http://www.thebraidytester.com/downloads/YouAreNotDoneYet.pdf "Title"), which inspired me to start my own checklist specifically around mobile development (iOS, Android, Windows Phone). It does look like a lot of time and effort was put into that version of the list, which I know is not even the first version. That is great work and if you're outside of mobile, I **strongly** suggest you go check it out. My only hope is to, someday, achieve a checklist of a similar quality. From there, I found multiple checklists on the internet, most of them very incomplete, but the one that stood out is [David Dias' Front-End checklist](https://github.com/thedaviddias/Front-End-Checklist "Title"), which also inspired me in many ways to improve my own. Please, go check him out aswell, it's work worth spreading !
+## d : How it all started
+  And finally, I would like to thank Michael Hunter for [his amazing checklist](http://www.thebraidytester.com/downloads/YouAreNotDoneYet.pdf "Title"), which inspired me to start my own checklist specifically around mobile development (iOS, Android, Windows Phone). It does look like a lot of time and effort was put into that version of the list, which I know is not even the first version. That is great work and if you're outside of mobile, I **strongly** suggest you go check it out. My only hope is to, someday, achieve a checklist of a similar quality. From there, I found multiple checklists on the internet, most of them very incomplete, but the one that stood out is [David Dias' Front-End checklist](https://github.com/thedaviddias/Front-End-Checklist "Title"), which also inspired me in many ways to improve my own. Please, go check him out aswell, it's work worth spreading !
 
 ## II : Text Inputs
 
-      Text inputs come in many flavors, size and use cases. Obviously you don't treat <code>password</code> fields the same way you treat another field, and there are many fields with many different purposes. This list should cover them all, or at least most of them.
+  Text inputs come in many flavors, size and use cases. Obviously you don't treat <code>password</code> fields the same way you treat another field, and there are many fields with many different purposes. This list should cover them all, or at least most of them.
 
 ### a : Text Validation :
 When validating data, 
