@@ -11,7 +11,7 @@
 8. Background (saved state, springboard card)
 5. Connectivity
 6. Localization (of text & images)
-7. Interruptions (calls)
+7. Interruptions (calls, power cycle, notification, alerts)
 9. Storage
 10. Security
 11. Accessibility (software buttons, zooming, font sizes, text to speech, ...)
