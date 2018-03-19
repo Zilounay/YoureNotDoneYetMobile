@@ -7,14 +7,38 @@
 2. Text Inputs
 3. Other Inputs (checkbox, switches, mutually exclusive controls)
 3. Error Management
-4. Navigation (push, pop, tabs, modal)
+4. Navigation (push, pop, tabs, modal, screen rotation)
 8. Background (saved state, springboard card)
-5. Connectivity
-6. Localization (of text & images)
-7. Interruptions (calls, power cycle, notification, alerts)
-9. Storage
-10. Security
+5. Connectivity (wifi, slow edge, 2G, 3G, 4G, intermittent, zero-bytes, offline, plane mode) and hardware connectivity (usb, nfc, bluetooth, wifi)
+6. Localization (of text & images, in various settings on the phone language vs app language vs current region)
+7. Interruptions (accepted calls, declined calls, sending/recieving SMS, power cycle, restart, sending/recieving notification, alerts, low memory, home screen, switching apps, plane mode, out of storage) : should mean the app can stop itself, pause itself, and recover at the correct screen and in the correct state whenever going into background or being interrupted by any mean. Answering apps *from the notification*.
+9. Storage (is everything stored properly, without risks, at the right place)
+10. Security (
+      Is your application storing payment information or credit card details?
+      Does your application use secure network protocols?
+      Can they be switched to insecure ones?
+      Does the application ask for more permissions than it needs?
+      Does your application use certificates?
+      Does your application use a Device ID as an identifier?
+      Does your application require a user to be authenticated before they are allowed to access their data?
+      Is there a maximum number of login attempts before they are locked out?)
+      Customers’ Payment data security
+      Network protocols security for running applications
+      Breach in applications’ security and error reporting
+      Authenticating application certificates and permissions
+      Automatic Application lock out upon continuously entering invalid
+
 11. Accessibility (software buttons, zooming, font sizes, text to speech, ...)
+12. Performance (battery usage, CPU usage, memory usage (and leaks), storage (disk vs card) management, responsiveness, screen size, time to launch app, time on launchscreen, heavy load screen / yous should spread loads, continuous key press ) Whatever happens should be dealt with smoothly with a nice prompt and clear reaction.
+13. Integration (does the camera, gps, bluetooth work fine with the app)
+14. Backwards compatibility, hardware compatibility : check all versions of all devices if possible. App must be installable and fully usable (unless features are not available on that device)
+15. Images : correct size & weight on all devices and orientations. Not stretched, not pixxelated, not too HD, etc.
+16. Social : security & privacy policies are available, user can log out or opt out. users are prompted of what can/will happen when they give rights AND when said thing (posts/shares/likes) happens.
+17. Ads (displayed/hidden when they should, display appropriate content)
+18. Timezones : remote calls/times vs phone time vs current region time => use UTC everywhere anyway
+19. Stores : App is visible only in the stores you want/need (iOS AppStore, PlayStore, Android Market, etc.), and is visible only on compatible devices. Tablet app should not be visible in smartphone store.
+
+
 
 ## I : Intro
 
