@@ -11,7 +11,7 @@
 8. Background (saved state, springboard card)
 5. Connectivity (wifi, slow edge, 2G, 3G, 4G, intermittent, zero-bytes, offline, plane mode) and hardware connectivity (usb, nfc, bluetooth, wifi)
 6. Localization (of text & images, in various settings on the phone language vs app language vs current region)
-7. Interruptions (accepted calls, declined calls, sending/recieving SMS, power cycle, restart, sending/recieving notification, alerts, low memory, home screen, switching apps, plane mode, out of storage) : should mean the app can stop itself, pause itself, and recover at the correct screen and in the correct state whenever going into background or being interrupted by any mean. Answering apps *from the notification*.
+7. Interruptions (accepted calls, declined calls, sending/receiving SMS, power cycle, restart, sending/recieving notification, alerts, low memory, home screen, switching apps, plane mode, out of storage) : should mean the app can stop itself, pause itself, and recover at the correct screen and in the correct state whenever going into background or being interrupted by any mean. Answering apps *from the notification*.
 9. Storage (is everything stored properly, without risks, at the right place)
 10. Security (
       Is your application storing payment information or credit card details?
@@ -29,10 +29,10 @@
       Automatic Application lock out upon continuously entering invalid
 
 11. Accessibility (software buttons, zooming, font sizes, text to speech, ...)
-12. Performance (battery usage, CPU usage, memory usage (and leaks), storage (disk vs card) management, responsiveness, screen size, time to launch app, time on launchscreen, heavy load screen / yous should spread loads, continuous key press ) Whatever happens should be dealt with smoothly with a nice prompt and clear reaction.
-13. Integration (does the camera, gps, bluetooth work fine with the app)
+12. Performance (battery usage, CPU usage, memory usage (and leaks), storage (disk vs card) management, responsiveness, screen size, time to launch app, time on launch screen, heavy load screen / yous should spread loads, continuous key press ) Whatever happens should be dealt with smoothly with a nice prompt and clear reaction.
+13. Integration (does the camera, GPS, bluetooth work fine with the app)
 14. Backwards compatibility, hardware compatibility : check all versions of all devices if possible. App must be installable and fully usable (unless features are not available on that device)
-15. Images : correct size & weight on all devices and orientations. Not stretched, not pixxelated, not too HD, etc.
+15. Images : correct size & weight on all devices and orientations. Not stretched, not pixelated, not too HD, etc.
 16. Social : security & privacy policies are available, user can log out or opt out. users are prompted of what can/will happen when they give rights AND when said thing (posts/shares/likes) happens.
 17. Ads (displayed/hidden when they should, display appropriate content)
 18. Timezones : remote calls/times vs phone time vs current region time => use UTC everywhere anyway
@@ -60,7 +60,7 @@ You can use this list however you like, because as long as you use it you'll imp
 As a quick but very important note, remember that a lot of this testing can be done using classic unit tests, and UI tests. That should already cover the vast majority of the important elements to test. The rest can be tested manually if necessary. That means that you can write test suites and use it in various places in your app to ensure long term stability. **Testing all this manually would be a nightmare** ; if you don't know how to write unit tests or UI tests, look it up. There is a lot to learn there that will save you a tremendous amount of time, and avoid the headache that manual testing is.
 
 ## c : Contribute
-I'm mostly writing this alone, the only help/inspiration I got was from browsing the internet (see next chapter, I.d) on various subjects. Sadly, I am limited by my own knowledge and experience, which means there is certainly a lot of content missing in areas that you, dear reader, have a lot of experience in. That's where github comes in place ; you can freely ask for a pull request, modifying my content or adding your own. I will review it and validate it to the best of my knowledge, probably with the help of the community. Stuff like security, encryption, networking, those are areas where I lack the most. Considering I'm an average Joe, that's probably where most people lack skill, and where your app will be most vulnerable/lacking aswell. This means those are areas (the ones you're weak in) must be triple checked and you should definitely spend extra attention on it !
+I'm mostly writing this alone, the only help/inspiration I got was from browsing the internet (see next chapter, I.d) on various subjects. Sadly, I am limited by my own knowledge and experience, which means there is certainly a lot of content missing in areas that you, dear reader, have a lot of experience in. That's where Github comes in place ; you can freely ask for a pull request, modifying my content or adding your own. I will review it and validate it to the best of my knowledge, probably with the help of the community. Stuff like security, encryption, networking, those are areas where I lack the most. Considering I'm an average Joe, that's probably where most people lack skill, and where your app will be most vulnerable/lacking as well. This means those are areas (the ones you're weak in) must be triple checked and you should definitely spend extra attention on it !
 
 Other ways of contributing / saying thank you would be the following :
 - Add a nice comment
@@ -69,11 +69,11 @@ Other ways of contributing / saying thank you would be the following :
 - If you really want to reward me in some special way, donations are always appreciated (and never mandatory)
 
 ## d : How it all started
-And finally, I would like to thank Michael Hunter for [his amazing checklist](http://www.thebraidytester.com/downloads/YouAreNotDoneYet.pdf "Title"), which inspired me to start my own checklist specifically around mobile development (iOS, Android, Windows Phone). It does look like a lot of time and effort was put into that version of the list, which I know is not even the first version. That is great work and if you're outside of mobile, I **strongly** suggest you go check it out. My only hope is to, someday, achieve a checklist of a similar quality. From there, I found multiple checklists on the internet, most of them very incomplete, but the one that stood out is [David Dias' Front-End checklist](https://github.com/thedaviddias/Front-End-Checklist "Title"), which also inspired me in many ways to improve my own. Please, go check him out aswell, it's work worth spreading !
+And finally, I would like to thank Michael Hunter for [his amazing checklist](http://www.thebraidytester.com/downloads/YouAreNotDoneYet.pdf "Title"), which inspired me to start my own checklist specifically around mobile development (iOS, Android, Windows Phone). It does look like a lot of time and effort was put into that version of the list, which I know is not even the first version. That is great work and if you're outside of mobile, I **strongly** suggest you go check it out. My only hope is to, someday, achieve a checklist of a similar quality. From there, I found multiple checklists on the internet, most of them very incomplete, but the one that stood out is [David Dias' Front-End checklist](https://github.com/thedaviddias/Front-End-Checklist "Title"), which also inspired me in many ways to improve my own. Please, go check him out as well, it's work worth spreading !
 
 ## II : Text Inputs
 
-Text inputs come in many flavors, size and use cases. Obviously you don't treat <code>password</code> fields the same way you treat another field, and there are many fields with many different purposes. This list should cover them all, or at least most of them.
+Text inputs come in many flavours, size and use cases. Obviously you don't treat <code>password</code> fields the same way you treat another field, and there are many fields with many different purposes. This list should cover them all, or at least most of them.
 
 ### a : Text Validation :
 When validating data, 
@@ -91,7 +91,7 @@ When validating data,
     - Do you accept negative numbers ? 
     - Do you accept large numbers ?
  - Do you accept an empty input ?
- - What happens if I paste 100 characeters in it ? Of various invalid/valid input types.
+ - What happens if I paste 100 characters in it ? Of various invalid/valid input types.
  - Many more...
 
 And if you've dealt with all that, you still have to think about error management, probably some input formatting (like adding a comma if you're okay with decimals), and then you'd still have some work to do. And that's only for one text input in one screen of your app. There is a lot more.
