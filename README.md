@@ -130,21 +130,21 @@ You're not done yet if you haven't tried to input data in the following ways :
 
 And that's only for one text input in one screen of your app. You should validate each text input field thoroughly, throughout the app. And this is not even mentioning input formatting, like adding spaces automatically between inputs, or forcing some characters to be coloured or changed to uppercase.
 
-====
+-----
 
 ### b : Numbers 
 You're not done yet if
 - [ ] CASE
 - == Your suggestion here ==
 
-====
+-----
 
 ### c : Email
 You're not done yet if
 - [ ] CASE
 - == Your suggestion here ==
 
-====
+---
 
 ### d : Telephone
 You're not done yet if
