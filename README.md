@@ -78,7 +78,7 @@ And finally, I would like to thank Michael Hunter for [his amazing checklist](ht
 
 Text inputs come in many flavours, size and use cases. Obviously you don't treat <code>password</code> fields the same way you treat another field, and there are many fields with many different purposes. This list should cover them all, or at least most of them. Testing your input will be done through multiple aspects. You need to make sure validation works in logic and UI, that the textfield handles all kinds of stress and inputs, and that, if any, the formatting works properly. All those together should ultimately provide you a working textfield.
 
-### a : Text Validation :
+### a : Text :
 You're not done yet if you haven't dealt with all of the following inputs and situations, when validating text inputs.
 
 - [ ] Alphanumeric : `aBCd 1234`
@@ -86,38 +86,111 @@ You're not done yet if you haven't dealt with all of the following inputs and si
 - [ ] Numerical : `123`
 - [ ] Other alphabets : 
 	- [ ] Chinese / Arabic / Cyrillic / Turkish : there are some very annoying cases that can be visually hard to find, like [the Turkish I](https://en.wikipedia.org/wiki/Dotted_and_dotless_I)
+	- [ ] Most ASCII & non-ASCII characters
 - [ ] Only zero : `0`
 - [ ] Decimals : `13.37` or `13,37`(mind the separator depending on the locale ! )
 - [ ] Negative numbers : `-1337`
 - [ ] Very large numbers : `10^20`
-- [ ] Empty
-- [ ] Null
+- [ ] Escape characters : `\t`, `\"`, ... 
+- [ ] Empty : `string.Empty`
+- [ ] Null : `null`
+- == Your suggestion here ==
+
+==========
 
 You're not done yet if you haven't tried to input data in the following ways :
-- One character at a time from left to right
-- From the end of a partially filled field
-- From the middle of a partially filled field
-- From the start of a partially filled field
-- 
-- Writing
-- [ ] Pasting invalid characters (test each type together and separetely)
+- [ ] One character at a time from left to right
+- [ ] From the end of a partially filled field
+- [ ] From the middle of a partially filled field
+- [ ] From the start of a partially filled field
+- [ ] Pasting invalid characters (try various combinations)
+- [ ] Pasting very large inputs of valid/invalid type. (Try various combinations)
 - [ ] Pasting valid input
-- [ ] Pasting valid input inside partial input
+- [ ] Pasting valid input inside partial valid input
+- [ ] Pasting valid input inside partial invalid input (the point is to check the state change of validity after the paste)
+- == Your suggestion here ==
 
-- - How many characters do you accept ?
-  - If you accept only letters 
-    - Did you define what a valid input is ?
-    - Did you define what an invalid input is ?
-    - Do you deal with invalid words ?
-  - Do you accept only numbers ?
-    - Do you accept zero ?
-    - Do you accept decimals ?
-    - Do you accept negative numbers ? 
-    - Do you accept large numbers ?
- - Do you accept an empty input ?
-- Special cases
-	-  ?
- - What happens if I paste 100 characters in it ? Of various invalid/valid input types.
- - Many more...
+========
 
-And if you've dealt with all that, you still have to think about error management, probably some input formatting (like adding a comma if you're okay with decimals), and then you'd still have some work to do. And that's only for one text input in one screen of your app. There is a lot more.
+- [ ] How many characters do you accept ?
+- [ ] Did you define what a valid input is (Only letters ? Only numbers ? 3 numbers & 4 letters ?) ?
+- [ ] Did you define what an invalid input is ? (Is Empty invalid? Is "valid + spaces" invalid?)
+- [ ] Do you deal with invalid inputs ? (Highlight input, display error, something like that)
+- [ ] Do you deal with numbers properly ?
+	- [ ] Do you deal with zero ?
+	- [ ] Do you deal with decimals ?
+	- [ ] Do you deal with negative numbers ? 
+	- [ ] Do you deal with large numbers ?
+- [ ] Do you accept an empty input ?
+- [ ] Spaces
+	- [ ] Space(s) at the start of the input
+	- [ ] Space(s) at the end of the input
+	- [ ] Space(s) in the middle of the input
+ - == Your suggestion here ==
+
+And that's only for one text input in one screen of your app. You should validate each text input field thoroughly, throughout the app. And this is not even mentioning input formatting, like adding spaces automatically between inputs, or forcing some characters to be coloured or changed to uppercase.
+
+====
+
+### b : Numbers 
+You're not done yet if
+- [ ] CASE
+- == Your suggestion here ==
+
+====
+
+### c : Email
+You're not done yet if
+- [ ] CASE
+- == Your suggestion here ==
+
+====
+
+### d : Telephone
+You're not done yet if
+- [ ] CASE
+- == Your suggestion here ==
+
+====
+
+### e : Password
+You're not done yet if
+- [ ] CASE
+- == Your suggestion here ==
+
+====
+
+### f : Date
+You're not done yet if
+- [ ] CASE
+- == Your suggestion here ==
+
+====
+
+### g : Time
+You're not done yet if
+- [ ] CASE
+- == Your suggestion here ==
+
+====
+
+### h : Search
+You're not done yet if
+- [ ] CASE
+- == Your suggestion here ==
+
+====
+
+### i : Radio/Checkbox
+You're not done yet if
+- [ ] CASE
+- == Your suggestion here ==
+
+====
+
+### j : Button
+You're not done yet if
+- [ ] CASE
+- == Your suggestion here ==
+
+====
