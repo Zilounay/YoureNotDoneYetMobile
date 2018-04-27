@@ -57,10 +57,14 @@ It's funny (or at least I like to think it is) and it's true. This simple exampl
 
 The whole list looks quite overwhelming and that is normal. I want it to be as complete as possible. Like I said earlier, the point is to inform you of the many possibilities. It is up to you to decide if an element is worth testing for your specific case. Wether it is or isn't is your decision, as long as you've made the decision and are aware of it. That is the point of this list. 
 
+-----
+
 ### b : Effectively using the list
 You can use this list however you like, because as long as you use it you'll improve the quality of the software you're shipping. The fact that you use that list is far more important than how you use that list. It could be a thorough and regular walkthrough, a pre-release last minute checklist, or even as simple as a quick read before going to bed. As long as you read it and know it's there, it'll be useful somehow.
 
 As a quick but very important note, remember that a lot of this testing can be done using classic unit tests, and UI tests. That should already cover the vast majority of the important elements to test. The rest can be tested manually if necessary. That means that you can write test suites and use it in various places in your app to ensure long term stability. **Testing all this manually would be a nightmare** ; if you don't know how to write unit tests or UI tests, look it up. There is a lot to learn there that will save you a tremendous amount of time, and avoid the headache that manual testing is.
+
+-----
 
 ### c : Contributing
 I'm mostly writing this alone, the only help/inspiration I got was from browsing the internet (see next chapter, I.d) on various subjects. Sadly, I am limited by my own knowledge and experience, which means there is certainly a lot of content missing in areas that you, dear reader, have a lot of experience in. That's where Github comes in place ; you can freely ask for a pull request, modifying my content or adding your own. I will review it and validate it to the best of my knowledge, probably with the help of the community. Stuff like security, encryption, networking, those are areas where I lack the most. Considering I'm an average Joe, that's probably where most people lack skill, and where your app will be most vulnerable/lacking as well. This means those are areas (the ones you're weak in) must be triple checked and you should definitely spend extra attention on it !
@@ -70,6 +74,8 @@ Other ways of contributing / saying thank you would be the following :
 - Like/Star the page
 - Share the content using the repo link (please do not copy paste or rehost yourself, link directly)
 - If you really want to reward me in some special way, donations are always appreciated (and never mandatory)
+
+-----
 
 ### d : How it all started, thank you
 And finally, I would like to thank Michael Hunter for [his amazing checklist](http://www.thebraidytester.com/downloads/YouAreNotDoneYet.pdf "Title"), which inspired me to start my own checklist specifically around mobile development (iOS, Android, Windows Phone). It does look like a lot of time and effort was put into that version of the list, which I know is not even the first version. That is great work and if you're outside of mobile, I **strongly** suggest you go check it out. My only hope is to, someday, achieve a checklist of a similar quality. From there, I found multiple checklists on the internet, most of them very incomplete, but the one that stood out is [David Dias' Front-End checklist](https://github.com/thedaviddias/Front-End-Checklist "Title"), which also inspired me in many ways to improve my own. Please, go check him out as well, it's work worth spreading !
@@ -96,7 +102,7 @@ You're not done yet if you haven't dealt with all of the following inputs and si
 - [ ] Null : `null`
 - == Your suggestion here ==
 
-==========
+-----
 
 You're not done yet if you haven't tried to input data in the following ways :
 - [ ] One character at a time from left to right
@@ -110,7 +116,7 @@ You're not done yet if you haven't tried to input data in the following ways :
 - [ ] Pasting valid input inside partial invalid input (the point is to check the state change of validity after the paste)
 - == Your suggestion here ==
 
-========
+-----
 
 - [ ] How many characters do you accept ?
 - [ ] Did you define what a valid input is (Only letters ? Only numbers ? 3 numbers & 4 letters ?) ?
@@ -144,53 +150,53 @@ You're not done yet if
 - [ ] CASE
 - == Your suggestion here ==
 
----
+-----
 
 ### d : Telephone
 You're not done yet if
 - [ ] CASE
 - == Your suggestion here ==
 
-====
+-----
 
 ### e : Password
 You're not done yet if
 - [ ] CASE
 - == Your suggestion here ==
 
-====
+-----
 
 ### f : Date
 You're not done yet if
 - [ ] CASE
 - == Your suggestion here ==
 
-====
+-----
 
 ### g : Time
 You're not done yet if
 - [ ] CASE
 - == Your suggestion here ==
 
-====
+-----
 
 ### h : Search
 You're not done yet if
 - [ ] CASE
 - == Your suggestion here ==
 
-====
+-----
 
 ### i : Radio/Checkbox
 You're not done yet if
 - [ ] CASE
 - == Your suggestion here ==
 
-====
+-----
 
 ### j : Button
 You're not done yet if
 - [ ] CASE
 - == Your suggestion here ==
 
-====
+-----
