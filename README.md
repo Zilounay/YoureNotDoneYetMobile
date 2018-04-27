@@ -89,6 +89,7 @@ You're not done yet if you haven't dealt with all of the following inputs and si
 
 - [ ] Alphanumeric : `aBCd 1234`
 - [ ] Symbols / non alphanumeric : `#@ !? ;) $= §`
+- [ ] Emojis : all formats : `:grinning:` or `:-)` or 😀 or `U+1F60A`
 - [ ] Numerical : `123`
 - [ ] Other alphabets : 
 	- [ ] Chinese / Arabic / Cyrillic / Turkish : there are some very annoying cases that can be visually hard to find, like [the Turkish I](https://en.wikipedia.org/wiki/Dotted_and_dotless_I)
