@@ -6,7 +6,7 @@
 1. Intro
 2. Text Inputs
 3. Other Inputs (checkbox, switches, mutually exclusive controls)
-3. Error Management
+3. Error Management (exceptions, crashes, alerts, displaying errors)
 4. Navigation (push, pop, tabs, modal, screen rotation)
 8. Background (saved state, springboard card)
 5. Connectivity (wifi, slow edge, 2G, 3G, 4G, intermittent, zero-bytes, offline, plane mode) and hardware connectivity (usb, nfc, bluetooth, wifi)
@@ -30,17 +30,24 @@
 
 11. Accessibility (software buttons, zooming, font sizes, text to speech, ...)
 12. Performance (battery usage, CPU usage, memory usage (and leaks), storage (disk vs card) management, responsiveness, screen size, time to launch app, time on launch screen, heavy load screen / yous should spread loads, continuous key press ) Whatever happens should be dealt with smoothly with a nice prompt and clear reaction.
+13. Background work
 13. Integration (does the camera, GPS, bluetooth work fine with the app)
 14. Backwards compatibility, hardware compatibility : check all versions of all devices if possible. App must be installable and fully usable (unless features are not available on that device)
 15. Images : correct size & weight on all devices and orientations. Not stretched, not pixelated, not too HD, etc.
 16. Social : security & privacy policies are available, user can log out or opt out. users are prompted of what can/will happen when they give rights AND when said thing (posts/shares/likes) happens.
 17. Ads (displayed/hidden when they should, display appropriate content)
 18. Timezones : remote calls/times vs phone time vs current region time => use UTC everywhere anyway
-19. Stores : App is visible only in the stores you want/need (iOS AppStore, PlayStore, Android Market, etc.), and is visible only on compatible devices. Tablet app should not be visible in smartphone store.
+19. Stores : App is visible only in the stores you want/need (iOS AppStore, PlayStore, Android Market, etc.), and is visible only on compatible devices. Tablet app should not be visible in smartphone store.Store page is up to date with version updates, description, name/number, testers notified before release,
+20. Pre-release checks / pre store checks (so that store review should pass)
+21. App icons are available in all required formats ; store icons are available ; all app images are available in all formats (1x, 2x, 3x, etc.)
 20. OS compatibilities, crossplatform compatibilities (does it work on iOS / Android/ Windows Phone how it should?)
 21. Version compatibilities : does it work in iOS 9, 10, 11, 12? Test your target AND all the versions you are supposed to support
 22. Does it work on all devices on all versions ? : iPhone, iPad, iPhone X, iPhone #S, and also android "omegalul"
 23. Orientations (error messages, videos, splashscreen, navigation and regular screens in all orientations, on all device sizes)
+24. Sound (stops when going to background? Keeps going? Displays a notification ? Is controllable in control center / remote player)
+25. Notifications (are sent when they should, are rich? deep linked? Modify badge ? Badge updates itself when app is read? geofenced? platform specific / feature specific. More to look up @pushwoosh for examples)
+27. Gestures
+28. 
 
 //Actual TODO list of stuff I don't want to forget
 - Add donation links to PayPal, ETH, XRP, LTC, BTC
