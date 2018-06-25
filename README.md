@@ -37,6 +37,10 @@
 17. Ads (displayed/hidden when they should, display appropriate content)
 18. Timezones : remote calls/times vs phone time vs current region time => use UTC everywhere anyway
 19. Stores : App is visible only in the stores you want/need (iOS AppStore, PlayStore, Android Market, etc.), and is visible only on compatible devices. Tablet app should not be visible in smartphone store.
+20. OS compatibilities, crossplatform compatibilities (does it work on iOS / Android/ Windows Phone how it should?)
+21. Version compatibilities : does it work in iOS 9, 10, 11, 12? Test your target AND all the versions you are supposed to support
+22. Does it work on all devices on all versions ? : iPhone, iPad, iPhone X, iPhone #S, and also android "omegalul"
+23. Orientations (error messages, videos, splashscreen, navigation and regular screens in all orientations, on all device sizes)
 
 //Actual TODO list of stuff I don't want to forget
 - Add donation links to PayPal, ETH, XRP, LTC, BTC
@@ -47,7 +51,7 @@
 ### a : What is this list
 What is this about ? This is about testing your app thoroughly and completely. This list will include as many elements as possible that you should test. Many of which you probably have already tested, some that you might have not thought about. This is about checking all the boxes and either validate the fact that you did indeed test X & Y, but that you also decided to ignore Z. Many of the elements of the checklist might not apply to you, because your app does not have that specific feature or does not use a specific technology. You might also simply want to skip some of testing for whatever reason, and that is fine. That's up to you to find out and decide ; as long as you've made a decision, it means that you've read the list, accepted the price & consequences of (not) testing and are good to go !
 
-If you think about your project, you probably have blinders on. Programmer's or owner's blinders are the worst, because you know what the app is supposed to do and, inevitably, you will test inside those bounds. Users might use your app, not in the way you thought they would, and this would be a UX problem. We're here only about testing, making sure that your app works offline, or on low battery, or when denied access rights that you actually need. Some stuff users might do that you took for granted during all these weeks of testing. This is mostly about "thinking outside the box" or, what I like to call it : doing the best job possible as a tester.
+If you think about your project, you probably have blinders on. Programmer's or owner's blinders are the worst, because you know what the app is supposed to do and, inevitably, you will test inside those bounds. Users might use your app not in the way you thought they would, and this would be a UX problem. We're here only about testing, making sure that your app works offline, or on low battery, or when denied access rights that you actually need. Some stuff users might do that you took for granted during all these weeks of testing. This is mostly about "thinking outside the box" or, what I like to call it : doing the best job possible as a tester.
 
 Here's a rather famous tweet that illustrates what I mean.
 
@@ -60,9 +64,9 @@ The whole list looks quite overwhelming and that is normal. I want it to be as c
 -----
 
 ### b : Effectively using the list
-You can use this list however you like, because as long as you use it you'll improve the quality of the software you're shipping. The fact that you use that list is far more important than how you use that list. It could be a thorough and regular walkthrough, a pre-release last minute checklist, or even as simple as a quick read before going to bed. As long as you read it and know it's there, it'll be useful somehow.
+You can use this list however you like, because as long as you use it you'll improve the quality of the software you're shipping. The fact that you use that list is far more important than how you use that list. It could be a thorough and regular walkthrough, a pre-release checklist, or even as simple as a quick read before going to bed. As long as you read it and know it's there, it'll be useful somehow.
 
-As a quick but very important note, remember that a lot of this testing can be done using classic unit tests, and UI tests. That should already cover the vast majority of the important elements to test. The rest can be tested manually if necessary. That means that you can write test suites and use it in various places in your app to ensure long term stability. **Testing all this manually would be a nightmare** ; if you don't know how to write unit tests or UI tests, look it up. There is a lot to learn there that will save you a tremendous amount of time, and avoid the headache that manual testing is.
+As a quick but very important note, remember that a lot of this testing can be done using classic unit tests, and UI tests. That should already cover the vast majority of the important elements to test. The rest can be tested manually if necessary. That means that you can write test suites and use it in various places in your app to ensure long term stability. **Testing all this manually would be a nightmare** ; if you don't know how to write unit tests or UI tests, look it up. There is a lot to learn there that will save you a tremendous amount of time, money, and avoid the ordeal that manual testing is.
 
 -----
 
@@ -71,9 +75,12 @@ I'm mostly writing this alone, the only help/inspiration I got was from browsing
 
 Other ways of contributing / saying thank you would be the following :
 - Add a nice comment
+- Participate yourself in the improvement of this list
 - Like/Star the page
 - Share the content using the repo link (please do not copy paste or rehost yourself, link directly)
-- If you really want to reward me in some special way, donations are always appreciated (and never mandatory)
+- If you really want to reward me in some special way, donations are always appreciated and never mandatory.
+
+ After all, I'm spending a lot of time to save you all some time as well, that must be worth something of the above :D
 
 -----
 
@@ -94,10 +101,6 @@ You're not done yet if you haven't dealt with all of the following inputs and si
 - [ ] Other alphabets : 
 	- [ ] Chinese / Arabic / Cyrillic / Turkish : there are some very annoying cases that can be visually hard to find, like [the Turkish I](https://en.wikipedia.org/wiki/Dotted_and_dotless_I)
 	- [ ] Most ASCII & non-ASCII characters
-- [ ] Only zero : `0`
-- [ ] Decimals : `13.37` or `13,37`(mind the separator depending on the locale ! )
-- [ ] Negative numbers : `-1337`
-- [ ] Very large numbers : `10^20`
 - [ ] Escape characters : `\t`, `\"`, ... 
 - [ ] Empty : `string.Empty`
 - [ ] Null : `null`
@@ -140,8 +143,34 @@ And that's only for one text input in one screen of your app. You should validat
 -----
 
 ### b : Numbers 
-You're not done yet if
-- [ ] CASE
+You're not done yet if you have not thoroughly tested all your number inputs
+- [ ] Only zero : `0`
+- [ ] Decimals : `13.37` or `13,37`(mind the separator depending on the locale ! )
+- [ ] Negative numbers : `-1337`
+- [ ] Very large numbers : `10^20`
+- [ ] A number bigger than the required range upper limit
+- [ ] A number smaller than the required range lower limit
+- [ ] A number equal to the upper range limit
+- [ ] A number equal to the lower range limit
+- [ ] A number as a string : `"124"`
+- [ ] A number with different culture decimal points : `12.23` vs `12,23` 
+- [ ] A number with separators (and decimals) : `10.234,96` vs `10,234.96`
+- [ ] Currencies in various cultures : `13.37 €` vs `€ 13.37`
+- [ ] The maximum / minimum number of decimal values 
+      - [ ] What is the number ?
+      - [ ] How do you round it when you have more decimals beforehand ? `13.34` instead of `13.3389` 
+      - [ ] How do you display it when you don't have enough decimals ? `13.00` or just `13`, or something else entirely?
+      - [ ] Are those decimals included in the maximum number limit ? Can I type `4000` but not `3999.99`, or can I also type `4000.56` ?
+- [ ] How do you deal with editing / formatting input on the fly?
+      - [ ] What happens if you erase the decimals, do you automatically erase the separator?
+      - [ ] What happens if you add a separator as the first character? `12345` becomes `0,12345` or `,12345` or something else? Is it reformatted to `0,12` ?
+- [ ] Do you handle copy pasting of values into the field ? Try with paste inputs that are
+      - [ ] Out of range ( `-1`, `0`, `-1000`, `234940` )
+      - [ ] Too big
+      - [ ] Too small
+      - [ ] Badly formatted
+      - [ ] Not numbers
+      - [ ] Basically everything from the number list, but in copy paste (multiple characters at once often behaves differently)
 - == Your suggestion here ==
 
 -----
