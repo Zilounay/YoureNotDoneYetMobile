@@ -156,9 +156,9 @@ You're not done yet if you have not thoroughly tested all your number inputs
 - [ ] A number with different culture decimal points : `12.23` vs `12,23` 
 - [ ] A number with separators (and decimals) : `10.234,96` vs `10,234.96`
 - [ ] Currencies in various cultures : `13.37 €` vs `€ 13.37`
-- [ ] The maximum / minimum number of decimal values 
+- [ ] The maximum / minimum number of decimal values
       - [ ] What is the number ?
-      - [ ] How do you round it when you have more decimals beforehand ? `13.34` instead of `13.3389` 
+      - [ ] How do you round it when you have more decimals beforehand ? `13.34` instead of `13.3389`
       - [ ] How do you display it when you don't have enough decimals ? `13.00` or just `13`, or something else entirely?
       - [ ] Are those decimals included in the maximum number limit ? Can I type `4000` but not `3999.99`, or can I also type `4000.56` ?
 - [ ] How do you deal with editing / formatting input on the fly?
