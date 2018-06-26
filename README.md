@@ -36,7 +36,7 @@
 15. Images : correct size & weight on all devices and orientations. Not stretched, not pixelated, not too HD, etc.
 16. Social : security & privacy policies are available, user can log out or opt out. users are prompted of what can/will happen when they give rights AND when said thing (posts/shares/likes) happens.
 17. Ads (displayed/hidden when they should, display appropriate content)
-18. Timezones : remote calls/times vs phone time vs current region time => use UTC everywhere anyway
+18. Timezones : remote calls/times vs phone time vs current region time => use UTC everywhere anyway, transform into local time in the view
 19. Stores : App is visible only in the stores you want/need (iOS AppStore, PlayStore, Android Market, etc.), and is visible only on compatible devices. Tablet app should not be visible in smartphone store.Store page is up to date with version updates, description, name/number, testers notified before release,
 20. Pre-release checks / pre store checks (so that store review should pass)
 21. App icons are available in all required formats ; store icons are available ; all app images are available in all formats (1x, 2x, 3x, etc.)
@@ -98,7 +98,7 @@ And finally, I would like to thank Michael Hunter for [his amazing checklist](ht
 Text inputs come in many flavours, size and use cases. Obviously you don't treat <code>password</code> fields the same way you treat another field, and there are many fields with many different purposes. This list should cover them all, or at least most of them. Testing your input will be done through multiple aspects. You need to make sure validation works in logic and UI, that the textfield handles all kinds of stress and inputs, and that, if any, the formatting works properly. All those together should ultimately provide you a working textfield.
 
 ### a : Text :
-You're not done yet if you haven't dealt with all of the following inputs and situations, when validating text inputs.
+You're not done yet if you haven't dealt with all of the following inputs and situations, when validating text inputs. Note that these also apply to most of other input types (password, email, numbers, etc.). If you're dealing with any type of string input, consider the following list as well as the relevant list.
 
 - [ ] Alphanumeric : `aBCd 1234`
 - [ ] Symbols / non alphanumeric : `#@ !? ;) $= §`
@@ -149,7 +149,7 @@ And that's only for one text input in one screen of your app. You should validat
 -----
 
 ### b : Numbers 
-You're not done yet if you have not thoroughly tested all your number inputs
+You're not done yet if you have not thoroughly tested all your number inputs with
 - [ ] Only zero : `0`
 - [ ] Decimals : `13.37` or `13,37`(mind the separator depending on the locale ! )
 - [ ] Negative numbers : `-1337`
@@ -182,8 +182,18 @@ You're not done yet if you have not thoroughly tested all your number inputs
 -----
 
 ### c : Email
-You're not done yet if
-- [ ] CASE
+You're not done yet if you haven't thoroughly tested all your email inputs with
+- [ ] Missing the `@` character
+- [ ] Multiple `@` characters
+- [ ] Missing the `.` character
+- [ ] Most alphanumeric characters
+- [ ] All email-friendly symbols ( `.`, `-` , `_`, etc. )
+- [ ] Long emails
+- [ ] Short emails
+- [ ] Empty
+- [ ] Invalid emails
+	- [ ] Special/invalid characters `ù`, `à`, etc.
+	- [ ] Different alphabets (Turkish, Cyrillic)
 - == Your suggestion here ==
 
 -----
