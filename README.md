@@ -21,12 +21,13 @@
       Does your application use certificates?
       Does your application use a Device ID as an identifier?
       Does your application require a user to be authenticated before they are allowed to access their data?
-      Is there a maximum number of login attempts before they are locked out?)
+      Is there a maximum number of login attempts before they are locked out?
       Customers’ Payment data security
       Network protocols security for running applications
       Breach in applications’ security and error reporting
       Authenticating application certificates and permissions
       Automatic Application lock out upon continuously entering invalid
+      )
 
 11. Accessibility (software buttons, zooming, font sizes, text to speech, ...)
 12. Performance (battery usage, CPU usage, memory usage (and leaks), storage (disk vs card) management, responsiveness, screen size, time to launch app, time on launch screen, heavy load screen / yous should spread loads, continuous key press ) Whatever happens should be dealt with smoothly with a nice prompt and clear reaction.
@@ -37,7 +38,7 @@
 16. Social : security & privacy policies are available, user can log out or opt out. users are prompted of what can/will happen when they give rights AND when said thing (posts/shares/likes) happens.
 17. Ads (displayed/hidden when they should, display appropriate content)
 18. Timezones : remote calls/times vs phone time vs current region time => use UTC everywhere anyway, transform into local time in the view
-19. Stores : App is visible only in the stores you want/need (iOS AppStore, PlayStore, Android Market, etc.), and is visible only on compatible devices. Tablet app should not be visible in smartphone store.Store page is up to date with version updates, description, name/number, testers notified before release,
+19. Stores : App is visible only in the stores you want/need (iOS AppStore, PlayStore, Android Market, etc.), and is visible only on compatible devices. Tablet app should not be visible in smartphone store. Store page is up to date with version updates, description, name/number, testers notified before release,
 20. Pre-release checks / pre store checks (so that store review should pass)
 21. App icons are available in all required formats ; store icons are available ; all app images are available in all formats (1x, 2x, 3x, etc.)
 20. OS compatibilities, crossplatform compatibilities (does it work on iOS / Android/ Windows Phone how it should?)
@@ -49,7 +50,6 @@
 27. Gestures
 
 //Actual TODO list of stuff I don't want to forget
-- Add donation links to PayPal, ETH, XRP, LTC, BTC
 - Add links to table of contents when document is close to being complete (or at least not structurally change too much)
 - 
 
@@ -206,8 +206,10 @@ You're not done yet if
 -----
 
 ### e : Password
-You're not done yet if
-- [ ] CASE
+You're not done yet if you haven't
+- [ ] tried copying from the password field and pasting somewhere else
+- [ ] hidden the password's field content
+- [ ] tested  all cases from previous fields (passwords might contain numbers, letters, and should be valid in all cases)
 - == Your suggestion here ==
 
 -----
@@ -233,16 +235,68 @@ You're not done yet if
 
 -----
 
-### i : Radio/Checkbox
+## II : Other Inputs
+
+Inputs are not always text in forms, there are other ways people can give their... input. And there are therefore other ways to forget stuff !
+
+### a : Disabled inputs
 You're not done yet if
 - [ ] CASE
 - == Your suggestion here ==
 
 -----
 
-### j : Button
+### b : Button
 You're not done yet if
 - [ ] CASE
 - == Your suggestion here ==
 
 -----
+
+### c : Radio/Checkbox
+You're not done yet if
+- [ ] CASE
+- == Your suggestion here ==
+
+-----
+
+### d : Switches
+You're not done yet if
+- [ ] CASE
+- == Your suggestion here ==
+
+-----
+
+## III : Error management
+
+Error management is the pillar of an app in good health. It'll help you track down issues (other tools will help too) and therefore fix bugs. But you don't want that to be an obstacle for your user and their experience of your app. There is a fine balance to achieve between good UX, bug tracking, and notifying the user an issue has arised.
+
+
+### a : Making errors & exceptions
+You're not done yet if
+- [ ] CASE
+- == Your suggestion here ==
+
+-----
+
+### b : Logging errors
+You're not done yet if
+- [ ] CASE
+- == Your suggestion here ==
+
+-----
+
+### c : Tracking errors
+You're not done yet if
+- [ ] CASE
+- == Your suggestion here ==
+
+-----
+
+### d : Dislpaying alerts
+You're not done yet if
+- [ ] CASE
+- == Your suggestion here ==
+
+-----
+
